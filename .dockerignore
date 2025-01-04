@@ -1,0 +1,320 @@
+# flyctl launch added from .gitignore
+# Logs
+**/logs
+**/*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+**/lerna-debug.log*
+
+**/node_modules
+**/dist
+**/dist-ssr
+**/*.local
+
+# Editor directories and files
+**/.vscode/*
+!**/.vscode/extensions.json
+**/.idea
+**/.DS_Store
+**/*.suo
+**/*.ntvs*
+**/*.njsproj
+**/*.sln
+**/*.sw?
+
+# flyctl launch added from node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/.gitignore
+# ignore most things, include some others
+node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/*
+node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/.*
+
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/bin
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/lib
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/docs
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/package.json
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/package-lock.json
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/README.md
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/CONTRIBUTING.md
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/LICENSE
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/CHANGELOG.md
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/example
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/scripts
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/tap-snapshots
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/test
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/.github
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/.travis.yml
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/.gitignore
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/.gitattributes
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/coverage-map.js
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/map.js
+!node_modules/@npmcli/run-script/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/index.js
+
+# flyctl launch added from node_modules/npm-normalize-package-bin/.gitignore
+# ignore most things, include some others
+node_modules/npm-normalize-package-bin/*
+node_modules/npm-normalize-package-bin/.*
+
+!node_modules/npm-normalize-package-bin/**/bin
+!node_modules/npm-normalize-package-bin/**/lib
+!node_modules/npm-normalize-package-bin/**/docs
+!node_modules/npm-normalize-package-bin/**/package.json
+!node_modules/npm-normalize-package-bin/**/package-lock.json
+!node_modules/npm-normalize-package-bin/**/README.md
+!node_modules/npm-normalize-package-bin/**/CONTRIBUTING.md
+!node_modules/npm-normalize-package-bin/**/LICENSE
+!node_modules/npm-normalize-package-bin/**/CHANGELOG.md
+!node_modules/npm-normalize-package-bin/**/example
+!node_modules/npm-normalize-package-bin/**/scripts
+!node_modules/npm-normalize-package-bin/**/tap-snapshots
+!node_modules/npm-normalize-package-bin/**/test
+!node_modules/npm-normalize-package-bin/**/.github
+!node_modules/npm-normalize-package-bin/**/.travis.yml
+!node_modules/npm-normalize-package-bin/**/.gitignore
+!node_modules/npm-normalize-package-bin/**/.gitattributes
+!node_modules/npm-normalize-package-bin/**/coverage-map.js
+!node_modules/npm-normalize-package-bin/**/map.js
+!node_modules/npm-normalize-package-bin/**/index.js
+
+# flyctl launch added from node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/.gitignore
+# ignore most things, include some others
+node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/*
+node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/.*
+
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/bin
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/lib
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/docs
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/package.json
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/package-lock.json
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/README.md
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/CONTRIBUTING.md
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/LICENSE
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/CHANGELOG.md
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/example
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/scripts
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/tap-snapshots
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/test
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/.github
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/.travis.yml
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/.gitignore
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/.gitattributes
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/coverage-map.js
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/map.js
+!node_modules/pacote/node_modules/@npmcli/installed-package-contents/node_modules/npm-normalize-package-bin/**/index.js
+
+# flyctl launch added from node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/.gitignore
+# ignore most things, include some others
+node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/*
+node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/.*
+
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/bin
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/lib
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/docs
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/package.json
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/package-lock.json
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/README.md
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/CONTRIBUTING.md
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/LICENSE
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/CHANGELOG.md
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/example
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/scripts
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/tap-snapshots
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/test
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/.github
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/.travis.yml
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/.gitignore
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/.gitattributes
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/coverage-map.js
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/map.js
+!node_modules/pacote/node_modules/read-package-json-fast/node_modules/npm-normalize-package-bin/**/index.js
+
+# flyctl launch added from packages/cm-eval/.gitignore
+# Logs
+packages/cm-eval/**/logs
+packages/cm-eval/**/*.log
+packages/cm-eval/**/npm-debug.log*
+packages/cm-eval/**/yarn-debug.log*
+packages/cm-eval/**/yarn-error.log*
+packages/cm-eval/**/pnpm-debug.log*
+packages/cm-eval/**/lerna-debug.log*
+
+packages/cm-eval/**/node_modules
+packages/cm-eval/**/dist
+packages/cm-eval/**/dist-ssr
+packages/cm-eval/**/*.local
+
+# Editor directories and files
+packages/cm-eval/**/.vscode/*
+!packages/cm-eval/**/.vscode/extensions.json
+packages/cm-eval/**/.idea
+packages/cm-eval/**/.DS_Store
+packages/cm-eval/**/*.suo
+packages/cm-eval/**/*.ntvs*
+packages/cm-eval/**/*.njsproj
+packages/cm-eval/**/*.sln
+packages/cm-eval/**/*.sw?
+
+# flyctl launch added from packages/example-vanilla-js/.gitignore
+# Logs
+packages/example-vanilla-js/**/logs
+packages/example-vanilla-js/**/*.log
+packages/example-vanilla-js/**/npm-debug.log*
+packages/example-vanilla-js/**/yarn-debug.log*
+packages/example-vanilla-js/**/yarn-error.log*
+packages/example-vanilla-js/**/pnpm-debug.log*
+packages/example-vanilla-js/**/lerna-debug.log*
+
+packages/example-vanilla-js/**/node_modules
+packages/example-vanilla-js/**/dist
+packages/example-vanilla-js/**/dist-ssr
+packages/example-vanilla-js/**/*.local
+
+# Editor directories and files
+packages/example-vanilla-js/**/.vscode/*
+!packages/example-vanilla-js/**/.vscode/extensions.json
+packages/example-vanilla-js/**/.idea
+packages/example-vanilla-js/**/.DS_Store
+packages/example-vanilla-js/**/*.suo
+packages/example-vanilla-js/**/*.ntvs*
+packages/example-vanilla-js/**/*.njsproj
+packages/example-vanilla-js/**/*.sln
+packages/example-vanilla-js/**/*.sw?
+
+# flyctl launch added from packages/lang-tidal/.gitignore
+packages/lang-tidal/node_modules
+packages/lang-tidal/**/package-lock.json
+packages/lang-tidal/dist
+
+# flyctl launch added from packages/pubsub/.gitignore
+# Logs
+packages/pubsub/**/logs
+packages/pubsub/**/*.log
+packages/pubsub/**/npm-debug.log*
+packages/pubsub/**/yarn-debug.log*
+packages/pubsub/**/yarn-error.log*
+packages/pubsub/**/pnpm-debug.log*
+packages/pubsub/**/lerna-debug.log*
+
+packages/pubsub/**/node_modules
+packages/pubsub/**/dist
+packages/pubsub/**/dist-ssr
+packages/pubsub/**/*.local
+
+# Editor directories and files
+packages/pubsub/**/.vscode/*
+!packages/pubsub/**/.vscode/extensions.json
+packages/pubsub/**/.idea
+packages/pubsub/**/.DS_Store
+packages/pubsub/**/*.suo
+packages/pubsub/**/*.ntvs*
+packages/pubsub/**/*.njsproj
+packages/pubsub/**/*.sln
+packages/pubsub/**/*.sw?
+
+# flyctl launch added from packages/server/.gitignore
+# Logs
+packages/server/**/logs
+packages/server/**/*.log
+packages/server/**/npm-debug.log*
+packages/server/**/yarn-debug.log*
+packages/server/**/yarn-error.log*
+packages/server/**/pnpm-debug.log*
+packages/server/**/lerna-debug.log*
+
+packages/server/**/node_modules
+packages/server/**/dist
+packages/server/**/dist-ssr
+packages/server/**/*.local
+
+# Editor directories and files
+packages/server/**/.vscode/*
+!packages/server/**/.vscode/extensions.json
+packages/server/**/.idea
+packages/server/**/.DS_Store
+packages/server/**/*.suo
+packages/server/**/*.ntvs*
+packages/server/**/*.njsproj
+packages/server/**/*.sln
+packages/server/**/*.sw?
+
+# flyctl launch added from packages/server-middleware/.gitignore
+# Logs
+packages/server-middleware/**/logs
+packages/server-middleware/**/*.log
+packages/server-middleware/**/npm-debug.log*
+packages/server-middleware/**/yarn-debug.log*
+packages/server-middleware/**/yarn-error.log*
+packages/server-middleware/**/pnpm-debug.log*
+packages/server-middleware/**/lerna-debug.log*
+
+packages/server-middleware/**/node_modules
+packages/server-middleware/**/dist
+packages/server-middleware/**/dist-ssr
+packages/server-middleware/**/*.local
+
+# Editor directories and files
+packages/server-middleware/**/.vscode/*
+!packages/server-middleware/**/.vscode/extensions.json
+packages/server-middleware/**/.idea
+packages/server-middleware/**/.DS_Store
+packages/server-middleware/**/*.suo
+packages/server-middleware/**/*.ntvs*
+packages/server-middleware/**/*.njsproj
+packages/server-middleware/**/*.sln
+packages/server-middleware/**/*.sw?
+
+# flyctl launch added from packages/session/.gitignore
+# Logs
+packages/session/**/logs
+packages/session/**/*.log
+packages/session/**/npm-debug.log*
+packages/session/**/yarn-debug.log*
+packages/session/**/yarn-error.log*
+packages/session/**/pnpm-debug.log*
+packages/session/**/lerna-debug.log*
+
+packages/session/**/node_modules
+packages/session/**/dist
+packages/session/**/dist-ssr
+packages/session/**/*.local
+
+# Editor directories and files
+packages/session/**/.vscode/*
+!packages/session/**/.vscode/extensions.json
+packages/session/**/.idea
+packages/session/**/.DS_Store
+packages/session/**/*.suo
+packages/session/**/*.ntvs*
+packages/session/**/*.njsproj
+packages/session/**/*.sln
+packages/session/**/*.sw?
+
+# flyctl launch added from packages/web/.gitignore
+# Logs
+packages/web/**/logs
+packages/web/**/*.log
+packages/web/**/npm-debug.log*
+packages/web/**/yarn-debug.log*
+packages/web/**/yarn-error.log*
+packages/web/**/pnpm-debug.log*
+packages/web/**/lerna-debug.log*
+
+packages/web/**/node_modules
+packages/web/**/dist
+packages/web/**/dist-ssr
+packages/web/**/*.local
+
+# Editor directories and files
+packages/web/**/.vscode/*
+!packages/web/**/.vscode/extensions.json
+packages/web/**/.idea
+packages/web/**/.DS_Store
+packages/web/**/*.suo
+packages/web/**/*.ntvs*
+packages/web/**/*.njsproj
+packages/web/**/*.sln
+packages/web/**/*.sw?
+
+# Strudel
+packages/web/**/public/assets/clockwork*.js
+fly.toml

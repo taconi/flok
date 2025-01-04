@@ -1,0 +1,23 @@
+# fly.toml app configuration file generated for flok on 2025-01-03T21:49:50-03:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'flok'
+primary_region = 'gru'
+
+[build]
+  dockerfile = 'Containerfile'
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '512mb'
+  cpu_kind = 'shared'
+  cpus = 1
