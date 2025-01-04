@@ -18,14 +18,16 @@ export function Component() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const hasWebGl = useMemo(() => isWebglSupported(), []);
   const [instance, setInstance] = useState<HydraWrapper | null>(null);
-  const [displaySettings, setDisplaySettings] = useState(defaultDisplaySettings);
+  const [displaySettings, setDisplaySettings] = useState(
+    defaultDisplaySettings,
+  );
 
   useEffect(() => {
     if (hasWebGl) return;
     sendToast(
       "warning",
       "WebGL not available",
-      "WebGL is disabled or not supported, so Hydra was not initialized"
+      "WebGL is disabled or not supported, so Hydra was not initialized",
     );
   }, [hasWebGl]);
 
@@ -43,6 +45,7 @@ export function Component() {
         onWarning: (msg) => {
           sendToast("warning", "Hydra warning", msg);
         },
+        displaySettings: displaySettings,
       });
 
       await hydra.initialize();
@@ -56,8 +59,13 @@ export function Component() {
   useAnimationFrame(
     useCallback(() => {
       window.m = window.parent?.mercury?.m;
-    }, [])
+      window.strudel = window.parent?.strudel?.strudel;
+    }, []),
   );
+
+  useEffect(() => {
+    instance?.setDisplaySettings(displaySettings);
+  }, [displaySettings]);
 
   useEvalHandler(
     useCallback(
@@ -65,8 +73,8 @@ export function Component() {
         if (!instance) return;
         instance.tryEval(msg.body);
       },
-      [instance]
-    )
+      [instance],
+    ),
   );
 
   useSettings(
@@ -77,9 +85,18 @@ export function Component() {
           setDisplaySettings(msg.displaySettings);
         }
       },
-      [instance]
-    )
+      [instance],
+    ),
   );
 
-  return hasWebGl && canvasRef && <HydraCanvas ref={canvasRef} fullscreen displaySettings={displaySettings} />;
+  return (
+    hasWebGl &&
+    canvasRef && (
+      <HydraCanvas
+        ref={canvasRef}
+        fullscreen
+        displaySettings={displaySettings}
+      />
+    )
+  );
 }

@@ -2,17 +2,13 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { DisplaySettings } from "@/lib/display-settings";
 
-interface HydraCanvasProps {
+interface Py5CanvasProps {
   fullscreen?: boolean;
   displaySettings: DisplaySettings;
   ref: React.RefObject<HTMLCanvasElement>;
 }
 
-const HydraCanvas = ({
-  fullscreen,
-  displaySettings,
-  ref,
-}: HydraCanvasProps) => (
+const Py5Canvas = ({ fullscreen, displaySettings, ref }: Py5CanvasProps) => (
   <canvas
     ref={ref}
     className={cn(
@@ -28,4 +24,4 @@ const HydraCanvas = ({
   />
 );
 
-export default React.memo(HydraCanvas);
+export default React.memo(Py5Canvas);

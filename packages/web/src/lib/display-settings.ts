@@ -1,14 +1,18 @@
 export interface DisplaySettings {
   canvasPixelSize: number;
   showCanvas: boolean;
+  enableFft: boolean;
 }
 
 export const defaultDisplaySettings: DisplaySettings = {
   canvasPixelSize: 1,
   showCanvas: true,
-}
+  enableFft: true,
+};
 
-export function sanitizeDisplaySettings(settings: DisplaySettings): DisplaySettings {
+export function sanitizeDisplaySettings(
+  settings: DisplaySettings,
+): DisplaySettings {
   // Pixel size should be at least 1 to prevent division-by-zero errors
   const minPixelSize = 1;
 
@@ -18,10 +22,9 @@ export function sanitizeDisplaySettings(settings: DisplaySettings): DisplaySetti
 
   return {
     ...settings,
-      canvasPixelSize: Math.max(
-          minPixelSize,
-          Math.min(
-            maxPixelSize,
-            Math.round(settings.canvasPixelSize))),
+    canvasPixelSize: Math.max(
+      minPixelSize,
+      Math.min(maxPixelSize, Math.round(settings.canvasPixelSize)),
+    ),
   };
 }
