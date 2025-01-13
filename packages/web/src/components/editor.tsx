@@ -16,6 +16,7 @@ import {
   langByTarget as langByTargetUntyped,
   panicCodes as panicCodesUntyped,
   targetsWithDocumentEvalMode,
+  noAutoIndent,
   webTargets,
 } from "@/settings.json";
 import { javascript } from "@codemirror/lang-javascript";
@@ -39,6 +40,7 @@ import React, { useEffect, useState } from "react";
 import { yCollab } from "y-codemirror.next";
 import { UndoManager } from "yjs";
 import themes from "@/lib/themes";
+import { toggleLineComment, insertNewline } from "@codemirror/commands";
 
 const defaultLanguage = "javascript";
 const langByTarget = langByTargetUntyped as { [lang: string]: string };
@@ -68,6 +70,27 @@ const panicKeymap = (
     : [];
 };
 
+// extra keymaps
+const extraKeymap = () => {
+  return keymap.of([
+    // fixes the Cmd/Alt-/ issue for Spanish keyboards
+    { key: "Shift-Cmd-7", run: toggleLineComment },
+    { key: "Shift-Alt-7", run: toggleLineComment },
+    { key: "Alt-/", run: toggleLineComment },
+    { key: "Ctrl-/", run: toggleLineComment },
+  ]);
+};
+
+// overwrites the default insertNewlineAndIndent command on Enter
+const autoIndentKeymap = (doc: Document) => {
+  // if any of the targets is part of the noAutoIndent setting in settings.json
+  const noIndent = noAutoIndent.includes(doc.target);
+  // overwrite the Enter with insertNewline
+  return noIndent
+    ? Prec.high(keymap.of([{ key: "Enter", run: insertNewline }]))
+    : [];
+};
+
 interface FlokSetupOptions {
   readOnly?: boolean;
 }
@@ -88,6 +111,8 @@ const flokSetup = (
     remoteEvalFlash(doc),
     Prec.high(evalKeymap(doc, { defaultMode, web })),
     panicKeymap(doc),
+    extraKeymap(),
+    autoIndentKeymap(doc),
     yCollab(text, doc.session.awareness, {
       undoManager,
       hideCaret: readOnly,
