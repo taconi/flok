@@ -13,7 +13,7 @@
     "tidal",
     "dummy"
   ],
-  "defaultTarget": "hydra",
+  "defaultTarget": "py5",
   "langByTarget": {
     "foxdot": "python",
     "hydra": "javascript",
